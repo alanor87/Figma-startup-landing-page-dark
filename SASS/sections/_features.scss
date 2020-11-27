@@ -1,0 +1,67 @@
+.section-features .section-subtitle {
+  max-width: 75%;
+  margin-bottom: 27px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    max-width: 60%;
+  }
+}
+.features-wrapper {
+  @media screen and (min-width: $breakpoint-desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+.features-chatbot {
+  width: 100%;
+  max-width: 324px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 113px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    max-width: 696px;
+    margin-bottom: 0;
+  }
+}
+
+.features-list {
+  max-width: 309px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: left;
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin: 0;
+  }
+}
+.features-item:not(:last-child) {
+  margin-bottom: 25px;
+}
+.features-item-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.features-icon {
+  margin-top: 5px;
+  &.spoons {
+    width: 26px;
+    height: 24px;
+  }
+  &.alien {
+    width: 30px;
+    height: 30px;
+  }
+  &.infinity {
+    width: 41px;
+    height: 19px;
+  }
+}
+.features-item-title {
+  @extend %font-title;
+  max-width: 65%;
+  padding: 0 10px 10px 10px;
+}
+.features-item-paragraphe {
+  @extend %font-paragraphe;
+  padding: 10px;
+}

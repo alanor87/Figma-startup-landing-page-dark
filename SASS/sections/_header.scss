@@ -1,0 +1,65 @@
+.section-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: $bg-dark;
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    @media screen and(min-width: $breakpoint-desktop) {
+      padding: 20px 30px;
+    }
+  }
+}
+.logo {
+  width: 206px;
+  height: 78px;
+}
+nav {
+  display: none;
+  @media screen and(min-width: $breakpoint-desktop) {
+    display: block;
+  }
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  & li:not(:last-child) {
+    margin-right: 31px;
+  }
+}
+.nav-link {
+  @extend %font-link;
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.button.login-btn {
+  background-color: transparent;
+  padding: 14px 46px;
+  color: $text-light;
+  border: 1px solid $bg-light;
+}
+
+.menu-btn {
+  border: none;
+  background-color: transparent;
+  @media screen and(min-width: $breakpoint-desktop) {
+      display: none;
+  }
+}
+.menu-icon {
+  width: 66px;
+  height: 53px;
+}
