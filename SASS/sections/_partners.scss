@@ -1,0 +1,29 @@
+.section-partners .section-subtitle {
+  text-align: center;
+  white-space: pre-wrap;
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: 54%;
+    white-space: initial;
+  }
+}
+.partners-icons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 286px;
+    height: 170px;
+    margin: 0 auto;
+    @media screen and (min-width: $breakpoint-desktop) {
+        width: auto;
+        height: auto;
+        flex-wrap: nowrap;
+    }
+}
+.partners-link {
+    display: block;
+}
+.partners-icon {
+    width: 80px;
+    height: 60px;
+}

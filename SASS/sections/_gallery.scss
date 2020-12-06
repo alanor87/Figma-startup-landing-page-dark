@@ -1,0 +1,68 @@
+.section-gallery .section-subtitle {
+    width: 57%;
+    padding: 10px;
+    margin-bottom: 54px;
+    @media screen and(min-width: $breakpoint-desktop) {
+      width: 54%;
+    }
+}
+.gallery-images-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & picture {
+    margin-bottom: 33px;
+  }
+  & .ipad,
+  & .talk,
+  & .domore,
+  & .code,
+  & .bluekey,
+  & .camera {
+    display: none;
+  }
+
+  @media screen and(min-width: $breakpoint-desktop) {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & picture {
+      margin-right: 33px;
+      margin-bottom: 44px;
+    }
+
+    .domore,
+    .camera {
+      margin-right: 0;
+    }
+
+    & .earphones,
+    & .hands,
+    & .laptop {
+      display: none;
+    }
+    & .ipad,
+    & .talk,
+    & .domore,
+    & .code,
+    & .bluekey,
+    & .camera {
+      display: block;
+    }
+  }
+}
+.gallery-image {
+  width: auto;
+  height: 285px;
+  border-radius: 12px;
+}
+.gallery-button {
+  @extend %button;
+  border: 1px solid $bg-light;
+  background-color: transparent;
+  margin-top: 11px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-top: 0;
+  }
+}
