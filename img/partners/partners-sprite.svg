@@ -40,7 +40,7 @@
             </path>
         </symbol>
         <symbol id="icon-appstore" viewBox="0 0 32 32">
-            <path fill="#000" style="fill: var(--color3, #000)"
+            <path fill="#1A74E8"
                 d="M7.155 0.12h17.689c3.807 0 6.893 3.086 6.893 6.893v17.689c0 3.807-3.086 6.893-6.893 6.893h-17.689c-3.807 0-6.893-3.086-6.893-6.893v-17.689c0-3.807 3.086-6.893 6.893-6.893z">
             </path>
             <path fill="#fff" style="fill: var(--color10, #fff)"

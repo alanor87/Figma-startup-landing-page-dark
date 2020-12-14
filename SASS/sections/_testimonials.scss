@@ -1,0 +1,41 @@
+.section-testimonials .section-title {
+  margin-bottom: 60px;
+}
+.testimonials-cards-wrapper {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.testimonials-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  width: 350px;
+  padding: 40px;
+  text-align: left;
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: $breakpoint-desktop) {
+    width: 430px;
+    margin: 10px;
+  }
+}
+.testimonials-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.testimonials-title {
+  @extend %font-link;
+  width: 42%;
+}
+.testimonials-text {
+  @extend %font-paragraphe;
+  width: 80%;
+  margin-top: 30px;
+}

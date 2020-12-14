@@ -8,23 +8,42 @@
   }
 }
 .partners-icons-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-content: space-between;
-    flex-wrap: wrap;
-    width: 286px;
-    height: 170px;
-    margin: 0 auto;
-    @media screen and (min-width: $breakpoint-desktop) {
-        width: auto;
-        height: auto;
-        flex-wrap: nowrap;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  flex-wrap: wrap;
+  width: 286px;
+  height: 170px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    justify-content: center;
+    width: auto;
+    height: auto;
+    flex-wrap: nowrap;
+  }
 }
 .partners-link {
-    display: block;
+  display: block;
+  @media screen and (min-width: $breakpoint-desktop) {
+    &:not(:last-child) {
+      margin-right: 74px;
+    }
+  }
 }
 .partners-icon {
-    width: 80px;
-    height: 60px;
+  width: 80px;
+  height: 60px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    &.ibm {
+      width: 150px;
+    }
+  }
+}
+.partners-btn {
+ @extend %button;
+ border: 1px solid white;
+ background-color: transparent;
+
 }

@@ -1,0 +1,50 @@
+.section-open-type {
+  padding-top: 104px;
+  padding-bottom: 0;
+  background-color: #1e1e1e;
+  @media screen and (min-width: $breakpoint-desktop) {
+    background-color: inherit;
+  }
+
+  & .section-title {
+    width: 80%;
+    margin-bottom: 37px;
+    @media screen and (min-width: $breakpoint-desktop) {
+        text-align: left;
+        width: 480px;
+        margin-left: 0;
+    }
+  }
+
+  & .container {
+      overflow: hidden;
+      @media screen and (min-width: $breakpoint-desktop) {
+          width: 1220px;
+          height: 370px;
+          position: relative;
+          padding: 60px 90px;   
+          background-color: $bg-grey;
+          border-radius: 33px;
+          z-index: -1;
+      }
+  }
+}
+.open-type-button-try {
+  @extend %button;
+  margin-bottom: 106px;
+  @media screen and (min-width: $breakpoint-desktop) {
+      margin-left: 0;
+  }
+}
+.open-type-img {
+  margin: 0 auto;
+  width: 450px;
+  height: auto;
+   @media screen and (min-width: $breakpoint-desktop) {
+       position: absolute;
+       top: 40px;
+       right: -10px;
+       width: 520px;
+       height: auto;
+   }
+}

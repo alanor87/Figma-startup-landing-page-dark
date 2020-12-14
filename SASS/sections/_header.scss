@@ -45,7 +45,7 @@ nav {
     color: $accent-color;
   }
 }
-.button.login-btn {
+.login-btn {
   background-color: transparent;
   padding: 14px 46px;
   color: $text-light;
@@ -56,7 +56,7 @@ nav {
   border: none;
   background-color: transparent;
   @media screen and(min-width: $breakpoint-desktop) {
-      display: none;
+    display: none;
   }
 }
 .menu-icon {
