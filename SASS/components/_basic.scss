@@ -5,6 +5,11 @@
   margin: 0;
 }
 
+*::-webkit-scrollbar {
+  width: 0px;
+}
+
+
 //----------------  Custom font declarations  ---------------
 
 @font-face {
@@ -45,7 +50,6 @@ section {
   margin-bottom: 100px;
   text-align: center;
 }
-
 a:hover,
 a:focus {
   color: $accent-color;

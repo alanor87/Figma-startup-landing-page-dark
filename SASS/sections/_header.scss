@@ -18,7 +18,7 @@
   width: 206px;
   height: 78px;
 }
-nav {
+.nav-header {
   display: none;
   @media screen and(min-width: $breakpoint-desktop) {
     display: block;
