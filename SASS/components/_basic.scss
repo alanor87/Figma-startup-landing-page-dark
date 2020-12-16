@@ -45,6 +45,13 @@ section {
   margin-bottom: 100px;
   text-align: center;
 }
+
+a:hover,
+a:focus {
+  color: $accent-color;
+  --color1: #02e4c0;
+}
+
 .container {
   margin: 0 auto;
   max-width: 550px;

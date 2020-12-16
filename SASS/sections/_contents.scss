@@ -16,7 +16,7 @@
   }
 }
 .contents-card {
-  width: 348px;
+  max-width: 348px;
   margin-left: auto;
   margin-right: auto;
   padding: 40px 25px;
@@ -27,7 +27,7 @@
   margin-bottom: 30px;
 
   @media screen and(min-width: $breakpoint-desktop) {
-    width: 476px;
+    max-width: 476px;
     height: 620px;
     padding: 40px 35px;
     margin-bottom: 0;

@@ -46,17 +46,24 @@ nav {
   }
 }
 .login-btn {
+  @extend %button;
   background-color: transparent;
   padding: 14px 46px;
+  margin: 0;
   color: $text-light;
   border: 1px solid $bg-light;
 }
 
 .menu-btn {
   border: none;
-  background-color: transparent;
+  background-color: transparent;  
+  cursor: pointer;
   @media screen and(min-width: $breakpoint-desktop) {
     display: none;
+  }
+  &:hover,
+  &:focus {
+    --color1: #02e4c0;
   }
 }
 .menu-icon {

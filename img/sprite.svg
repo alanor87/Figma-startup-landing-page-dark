@@ -40,7 +40,7 @@
             </path>
         </symbol>
         <symbol id="icon-menu-burger" viewBox="0 0 40 32">
-            <path fill="#fff" style="fill: var(--color1, #fff)"
+            <path style="fill: var(--color1, #fff)"
                 d="M6.641 8h26.566v2.667h-26.566v-2.667zM13.283 14.667h19.925v2.667h-19.925v-2.667zM21.585 21.333h11.623v2.667h-11.623v-2.667z">
             </path>
         </symbol>
