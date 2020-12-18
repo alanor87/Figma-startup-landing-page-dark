@@ -27,7 +27,7 @@
           </ul>
         </nav>
         <button type="button" class="login-btn">Login</button>
-        <button type="button" class="menu-btn">
+        <button type="button" class="menu-btn" open-modal>
           <svg class="menu-icon">
             <use href="./img/sprite.svg#icon-menu-burger"></use>
           </svg>
@@ -349,11 +349,8 @@
               </svg>
             </a>
             <a href="" class="partners-link">
-              <svg class="partners-icon">
-                <use
-                  href="./img/partners/partners-sprite.svg#icon-airpay"
-                ></use>
-              </svg>
+              <img src="./img/partners/partners-airpay.svg" class="partners-icon">
+                
             </a>
             <a href="" class="partners-link">
               <svg class="partners-icon">
@@ -584,7 +581,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" modal>
       <div class="modal-wrap">
         <div class="container">
           <a class="logo-modal" href="#">
@@ -595,21 +592,22 @@
               class="logo"
             />
           </a>
-          <button type="button" class="menu-close-btn">
+          <button type="button" class="menu-close-btn" close-modal>
             <svg class="menu-close-icon">
               <use href="./img/sprite.svg#icon-menu-close"></use>
             </svg>
           </button>
           <nav class="nav-modal">
             <ul class="modal-nav-list">
-              <li><a href="#" class="nav-link">Home</a></li>
-              <li><a href="#" class="nav-link">Product</a></li>
-              <li><a href="#" class="nav-link">About</a></li>
-              <li><a href="#" class="nav-link">Contact</a></li>
+              <li><a href="#" class="nav-link" close-modal>Home</a></li>
+              <li><a href="#" class="nav-link" close-modal>Product</a></li>
+              <li><a href="#" class="nav-link" close-modal>About</a></li>
+              <li><a href="#" class="nav-link" close-modal>Contact</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </div>
   </body>
+  <script src='./js/main.js'></script>
 </html>

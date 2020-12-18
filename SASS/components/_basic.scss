@@ -5,11 +5,6 @@
   margin: 0;
 }
 
-*::-webkit-scrollbar {
-  width: 0px;
-}
-
-
 //----------------  Custom font declarations  ---------------
 
 @font-face {
@@ -50,10 +45,23 @@ section {
   margin-bottom: 100px;
   text-align: center;
 }
+
+a {
+  transition: color 250ms linear;
+}
 a:hover,
 a:focus {
   color: $accent-color;
-  --color1: #02e4c0;
+}
+
+svg {
+  fill: #ffffff;
+  transition: fill 250ms linear;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;;
+  }
 }
 
 .container {
