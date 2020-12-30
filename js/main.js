@@ -23,7 +23,8 @@ function onEntry(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             console.log('HereI am');
-            entry.target.style.transform = 'translateY(0)';
+            entry.target.style.transform = 'translateX(0)';
+            console.log('Yo');
         }
     })
 }
@@ -35,6 +36,6 @@ let options = {
     threshold: 0.2,
 };
 
-let target = Array.from(document.getElementsByTagName('section'));
+let target = Array.from(document.getElementsByClassName('container'));
 let observer = new IntersectionObserver(onEntry, options);
 target.forEach(element => observer.observe(element));
