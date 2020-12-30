@@ -4,6 +4,7 @@
   top: 0;
   left: 0;
   background-color: $bg-dark;
+  z-index: 10;
   & .container {
     display: flex;
     justify-content: space-between;
@@ -34,17 +35,7 @@
     margin-right: 31px;
   }
 }
-.nav-link {
-  @extend %font-link;
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 10px;
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
-  }
-}
 .login-btn {
   @extend %button;
   background-color: transparent;

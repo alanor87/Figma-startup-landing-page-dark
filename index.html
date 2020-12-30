@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <title>Startup landing page</title>
   </head>
   <body>
@@ -21,9 +25,9 @@
         <nav class="nav-header">
           <ul class="nav-list">
             <li><a href="#" class="nav-link">Home</a></li>
-            <li><a href="#" class="nav-link">Product</a></li>
+            <li><a href="#product" class="nav-link">Product</a></li>
             <li><a href="#" class="nav-link">About</a></li>
-            <li><a href="#" class="nav-link">Contact</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
         </nav>
         <button type="button" class="login-btn">Login</button>
@@ -48,7 +52,7 @@
           </div>
         </div>
       </section>
-      <section class="section-features">
+      <section class="section-features" id="product">
         <div class="container">
           <h2 class="section-title">FEATURES</h2>
           <p class="section-subtitle">
@@ -192,7 +196,7 @@
             keystroke away.
           </p>
           <div class="gallery-images-wrapper">
-            <picture class="drone">
+            <picture>
               <source
                 srcset="
                   ./img/gallery/gallery-drone-desktop@1x.jpg 1x,
@@ -349,8 +353,10 @@
               </svg>
             </a>
             <a href="" class="partners-link">
-              <img src="./img/partners/partners-airpay.svg" class="partners-icon">
-                
+              <img
+                src="./img/partners/partners-airpay.svg"
+                class="partners-icon"
+              />
             </a>
             <a href="" class="partners-link">
               <svg class="partners-icon">
@@ -504,7 +510,7 @@
         </div>
       </section>
     </main>
-    <footer class="section-footer">
+    <footer class="section-footer" id="contact">
       <div class="container">
         <div class="footer-wrap">
           <ul class="footer-nav">
@@ -536,78 +542,75 @@
               </ul>
             </li>
           </ul>
-          <div class="contacts-block">
-            <ul class="contacts">
-              <li>
-                <a
-                  class="contacts-link"
-                  href="https://goo.gl/maps/GQKhCAzYcuWmtKSq5"
-                  ><svg width="46px" height="46px">
-                    <use href="./img/sprite.svg#icon-footer-location"></use>
-                  </svg>
-                  Mockingbird Hill undefined</a
-                >
-              </li>
-              <li>
-                <a class="contacts-link" href="tel:(239) 555-0108"
-                  ><svg width="35px" height="35px">
-                    <use href="./img/sprite.svg#icon-footer-phone"></use>
-                  </svg>
-                  (239) 555-0108</a
-                >
-              </li>
-            </ul>
-            <ul class="social-networks">
-              <li>
-                <a href=""
-                  ><svg width="40px" height="40px">
-                    <use href="./img/sprite.svg#icon-twitter"></use></svg
-                ></a>
-              </li>
-              <li>
-                <a href=""
-                  ><svg width="40px" height="40px">
-                    <use href="./img/sprite.svg#icon-facebook"></use></svg
-                ></a>
-              </li>
-              <li>
-                <a href=""
-                  ><svg width="40px" height="40px">
-                    <use href="./img/sprite.svg#icon-linkedin"></use></svg
-                ></a>
-              </li>
-            </ul>
-          </div>
+
+          <ul class="contacts">
+            <li>
+              <a
+                class="contacts-link"
+                href="https://goo.gl/maps/GQKhCAzYcuWmtKSq5"
+                ><svg width="46px" height="46px">
+                  <use href="./img/sprite.svg#icon-footer-location"></use>
+                </svg>
+                Mockingbird Hill undefined</a
+              >
+            </li>
+            <li>
+              <a class="contacts-link" href="tel:(239) 555-0108"
+                ><svg width="35px" height="35px">
+                  <use href="./img/sprite.svg#icon-footer-phone"></use>
+                </svg>
+                (239) 555-0108</a
+              >
+            </li>
+          </ul>
+          <ul class="social-networks">
+            <li>
+              <a href=""
+                ><svg width="40px" height="40px">
+                  <use href="./img/sprite.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><svg width="40px" height="40px">
+                  <use href="./img/sprite.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a href=""
+                ><svg width="40px" height="40px">
+                  <use href="./img/sprite.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
         </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" modal>
-      <div class="modal-wrap">
-        <div class="container">
-          <a class="logo-modal" href="#">
-            <img
-              src="./img/logo-dark@1x.png"
-              srcset="./img/logo-dark@2x.png 2x"
-              alt="Logo"
-              class="logo"
-            />
-          </a>
-          <button type="button" class="menu-close-btn" close-modal>
-            <svg class="menu-close-icon">
-              <use href="./img/sprite.svg#icon-menu-close"></use>
-            </svg>
-          </button>
-          <nav class="nav-modal">
-            <ul class="modal-nav-list">
-              <li><a href="#" class="nav-link" close-modal>Home</a></li>
-              <li><a href="#" class="nav-link" close-modal>Product</a></li>
-              <li><a href="#" class="nav-link" close-modal>About</a></li>
-              <li><a href="#" class="nav-link" close-modal>Contact</a></li>
-            </ul>
-          </nav>
-        </div>
+      <div class="container">
+        <a class="logo-modal" href="#">
+          <img
+            src="./img/logo-dark@1x.png"
+            srcset="./img/logo-dark@2x.png 2x"
+            alt="Logo"
+            class="logo"
+          />
+        </a>
+        <button type="button" class="menu-close-btn" close-modal>
+          <svg class="menu-close-icon">
+            <use href="./img/sprite.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <nav class="nav-modal">
+          <ul class="modal-nav-list">
+            <li><a href="#" class="nav-link" close-modal>Home</a></li>
+            <li><a href="#product" class="nav-link" close-modal>Product</a></li>
+            <li><a href="#" class="nav-link" close-modal>About</a></li>
+            <li><a href="#contact" class="nav-link" close-modal>Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </div>
   </body>
-  <script src='./js/main.js'></script>
+  <script src="./js/main.js"></script>
 </html>

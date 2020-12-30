@@ -1,6 +1,5 @@
 .section-open-type {
   padding-top: 104px;
-  padding-bottom: 0;
   background-color: #1e1e1e;
   @media screen and (min-width: $breakpoint-desktop) {
     background-color: inherit;
@@ -34,6 +33,7 @@
   margin-bottom: 106px;
   @media screen and (min-width: $breakpoint-desktop) {
       margin-left: 0;
+      margin-bottom: 0;
   }
 }
 .open-type-img {
