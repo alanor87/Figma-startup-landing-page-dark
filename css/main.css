@@ -590,11 +590,11 @@ svg:hover, svg:focus {
 .section-partners .section-subtitle {
   text-align: center;
   margin-bottom: 60px;
+  width: 54%;
 }
 
 @media screen and (min-width: 1230px) {
   .section-partners .section-subtitle {
-    width: 54%;
     white-space: initial;
   }
 }

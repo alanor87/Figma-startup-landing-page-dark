@@ -1,8 +1,8 @@
 .section-partners .section-subtitle {
   text-align: center;
   margin-bottom: 60px;
+  width: 54%;
   @media screen and (min-width: $breakpoint-desktop) {
-    width: 54%;
     white-space: initial;
   }
 }
@@ -41,8 +41,7 @@
   }
 }
 .partners-btn {
- @extend %button;
- border: 1px solid white;
- background-color: transparent;
-
+  @extend %button;
+  border: 1px solid white;
+  background-color: transparent;
 }

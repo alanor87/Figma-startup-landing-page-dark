@@ -25,13 +25,12 @@ function onEntry(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.style.transform = 'translateX(0px)';
-            entry.target.style.opacity = entry.intersectionRatio;
+            entry.target.style.opacity = entry.intersectionRatio + 0.3;
         }
     })
 }
 const options = {
     root: null,
-    rootMargin: '0px 0px 400px 0px',
     threshold: thresholdArray,
 };
 
