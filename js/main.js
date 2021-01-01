@@ -18,24 +18,23 @@
 
 
 //#################################### Intersection observer ##############################//
+const thresholdArray = [];
+for (let i = 0; i <= 100; i += 1) thresholdArray.push(i / 100);
 
 function onEntry(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            console.log('HereI am');
-            entry.target.style.transform = 'translateX(0)';
-            console.log('Yo');
+            entry.target.style.transform = 'translateX(0px)';
+            entry.target.style.opacity = entry.intersectionRatio;
         }
     })
 }
-
-
-let options = {
+const options = {
     root: null,
-    rootMargin: '0px',
-    threshold: 0.2,
+    rootMargin: '0px 0px 400px 0px',
+    threshold: thresholdArray,
 };
 
-let target = Array.from(document.getElementsByClassName('container'));
-let observer = new IntersectionObserver(onEntry, options);
+const target = Array.from(document.getElementsByClassName('container-shift'));
+const observer = new IntersectionObserver(onEntry, options);
 target.forEach(element => observer.observe(element));

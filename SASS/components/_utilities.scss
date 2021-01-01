@@ -2,3 +2,8 @@
   visibility: hidden;
   pointer-events: none;
 }
+
+.container-shift {  
+  transform: translateX(-100px);
+  transition: transform 800ms ease-out;
+}
