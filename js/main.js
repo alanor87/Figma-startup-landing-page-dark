@@ -18,20 +18,19 @@
 
 
 //#################################### Intersection observer ##############################//
-const thresholdArray = [];
-for (let i = 0; i <= 100; i += 1) thresholdArray.push(i / 100);
 
-function onEntry(entries, observer) {
+function onEntry(entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.style.transform = 'translateX(0px)';
-            entry.target.style.opacity = entry.intersectionRatio + 0.3;
+            entry.target.style.opacity = '1.0';
         }
     })
 }
+
 const options = {
     root: null,
-    threshold: thresholdArray,
+    threshold: 0.1,
 };
 
 const target = Array.from(document.getElementsByClassName('container-shift'));
