@@ -114,17 +114,19 @@ html {
 }
 
 @font-face {
-  font-family: 'Graphik Regular';
+  font-family: 'Graphik Regular', sans-serif;
   src: local("Graphik Regular"), local("Graphik-Regular"), url("fonts/Graphik-Regular.woff2") format("woff2"), url("fonts/Graphik-Regular.woff") format("woff"), url("fonts/Graphik-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'Graphik Medium';
+  font-family: 'Graphik Medium', sans-serif;
   src: local("Graphik Medium"), local("Graphik-Medium"), url("fonts/Graphik-Medium.woff2") format("woff2"), url("fonts/Graphik-Medium.woff") format("woff"), url("fonts/Graphik-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 img {
