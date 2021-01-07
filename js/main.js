@@ -16,10 +16,9 @@
 
 })();
 
+//#################################### Sections Intersection observer ##############################//
 
-//#################################### Intersection observer ##############################//
-
-function onEntry(entries) {
+function onSectionEntry(entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.style.transform = 'translateX(0px)';
@@ -27,12 +26,32 @@ function onEntry(entries) {
         }
     })
 }
-
-const options = {
+const sectionOptions = {
     root: null,
     threshold: 0.1,
 };
+const sectionsTarget = Array.from(document.getElementsByClassName('container-shift'));
+const sectionObserver = new IntersectionObserver(onSectionEntry, sectionOptions);
+sectionsTarget.forEach(section => sectionObserver.observe(section));
 
-const target = Array.from(document.getElementsByClassName('container-shift'));
-const observer = new IntersectionObserver(onEntry, options);
-target.forEach(element => observer.observe(element));
+
+//#################################### Images Intersection observer ##############################//
+
+// const onImageEntry = function (entries) {
+//     for (entry of entries) {
+//         if (entry.isIntersecting) {
+//             entry.target.src = entry.target.dataset.src;
+//             imageObserver.unobserve(entry.target);
+//         };
+//     }
+// }
+// const imagesOptions = {
+//     root: null,
+//     rootMargin: '0px 0px 20px 0px',
+//     threshold: 0.01,
+// }
+// const imagesTarget = Array.from(document.getElementsByTagName('img'));
+// const imageObserver = new IntersectionObserver(onImageEntry, imagesOptions);
+// imagesTarget.forEach(image => imageObserver.observe(image));
+
+// console.log(document.getElementsByTagName('img'));
