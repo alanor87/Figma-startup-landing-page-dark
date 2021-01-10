@@ -21,14 +21,14 @@
 function onSectionEntry(entries) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.style.transform = 'translateX(0px)';
-            entry.target.style.opacity = '1.0';
+            entry.target.classList.toggle('container-shift');
+            sectionObserver.unobserve(entry.target);
         }
     })
 }
 const sectionOptions = {
     root: null,
-    threshold: 0.1,
+    threshold: 0.01,
 };
 const sectionsTarget = Array.from(document.getElementsByClassName('container-shift'));
 const sectionObserver = new IntersectionObserver(onSectionEntry, sectionOptions);

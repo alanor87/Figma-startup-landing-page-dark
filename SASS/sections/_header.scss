@@ -44,6 +44,9 @@
   margin: 0;
   color: $text-light;
   border: 1px solid $bg-light;
+  @media screen and (max-width: $breakpoint-small-mobile) {
+    display: none;
+  }
 }
 
 .menu-btn {

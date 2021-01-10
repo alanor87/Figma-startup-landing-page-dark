@@ -33,6 +33,19 @@
   width: 30%;
   margin-bottom: 80px;
 }
+.modal-login-btn {
+  @extend %button;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 20%;
+  background-color: transparent;
+  @media screen and (min-width: $breakpoint-small-mobile){
+    display: none;
+  }
+}
 .menu-close-btn {
   position: absolute;
   top: 26px;

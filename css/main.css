@@ -6,7 +6,6 @@
 .container-shift {
   opacity: 0;
   transform: translateX(-100px);
-  transition: transform 800ms ease-out, opacity 800ms ease-out;
 }
 
 .section-title {
@@ -55,7 +54,7 @@
   text-decoration: none;
 }
 
-.login-btn, .try-button, .learn-button, .contents-button-signup, .contents-button-try, .gallery-button, .partners-btn, .open-type-button-try {
+.login-btn, .try-button, .learn-button, .contents-button-signup, .contents-button-try, .gallery-button, .partners-btn, .open-type-button-try, .modal-login-btn {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -69,7 +68,7 @@
   transition: background-color 250ms linear, border-color 250ms linear;
 }
 
-.login-btn:hover, .try-button:hover, .learn-button:hover, .contents-button-signup:hover, .contents-button-try:hover, .gallery-button:hover, .partners-btn:hover, .open-type-button-try:hover, .login-btn:focus, .try-button:focus, .learn-button:focus, .contents-button-signup:focus, .contents-button-try:focus, .gallery-button:focus, .partners-btn:focus, .open-type-button-try:focus {
+.login-btn:hover, .try-button:hover, .learn-button:hover, .contents-button-signup:hover, .contents-button-try:hover, .gallery-button:hover, .partners-btn:hover, .open-type-button-try:hover, .modal-login-btn:hover, .login-btn:focus, .try-button:focus, .learn-button:focus, .contents-button-signup:focus, .contents-button-try:focus, .gallery-button:focus, .partners-btn:focus, .open-type-button-try:focus, .modal-login-btn:focus {
   background: #4452fe;
   border-color: #4452fe;
 }
@@ -177,6 +176,8 @@ svg:hover, svg:focus {
 .container {
   margin: 0 auto;
   max-width: 550px;
+  min-width: 280px;
+  transition: transform 1000ms ease-out, opacity 1000ms ease-out;
 }
 
 @media screen and (min-width: 1230px) {
@@ -251,6 +252,12 @@ svg:hover, svg:focus {
   margin: 0;
   color: #ffffff;
   border: 1px solid #ffffff;
+}
+
+@media screen and (max-width: 450px) {
+  .login-btn {
+    display: none;
+  }
 }
 
 .menu-btn {
@@ -867,6 +874,22 @@ svg:hover, svg:focus {
   display: block;
   width: 30%;
   margin-bottom: 80px;
+}
+
+.modal-login-btn {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding: 20%;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 450px) {
+  .modal-login-btn {
+    display: none;
+  }
 }
 
 .menu-close-btn {
