@@ -1,38 +1,25 @@
 .section-hero {
   padding-bottom: 480px;
-  background-image: 
-    url('../img/hero/hero-screens-mobile@1x.jpg');
+  background-image: url('../img/hero/hero-screens-mobile@1x.jpg');
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 837px;
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        180deg,
-        rgba(30, 30, 30, 0) 80%,
-        #0e0e0e 100%
-      ),
+    background-image: 
       url('../img/hero/hero-screens-mobile@2x.jpg');
   }
   @media screen and (min-width: $breakpoint-desktop) {
     background-size: 1579px;
     padding-bottom: 890px;
-    background-image: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0) 80%,
-        #0e0e0e 100%
-      ),
+    background-image:
       url('../img/hero/hero-screens-desktop@1x.jpg');
   }
   @media screen and (min-width: $breakpoint-desktop) and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0) 80%,
-        #0e0e0e 100%
-      ),
+    background-image:
       url('../img/hero/hero-screens-desktop@2x.jpg');
   }
 
@@ -76,5 +63,5 @@
 .learn-button {
   @extend %button;
   background-color: transparent;
-  border: 1px solid $bg-light;
+  border: 1px solid var(--bg-secondary);
 }

@@ -1,12 +1,12 @@
-$bg-dark: #181818;
-$bg-light: #ffffff;
-$bg-grey: #343434;
-
-$accent-color:#4452fe;
-
-$text-dark: #000000;
-$text-light: #ffffff;
-$text-grey: #5c5c5c;
+:root {
+  --bg-main: #181818;
+  --bg-secondary:#e7e7e7;
+  --bg-third: #343434;
+  --accent-color: #4452fe;
+  --text-main: #000000;
+  --text-secondary:#e7e7e7;
+  --text-third: #5c5c5c;
+}
 
 $breakpoint-desktop: 1230px;
 $breakpoint-small-mobile: 450px;

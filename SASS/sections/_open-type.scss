@@ -22,7 +22,7 @@
       background-color: #1e1e1e;
       position: relative;
       padding: 60px 90px;
-      background-color: $bg-grey;
+      background-color: var(--bg-third);
       border-radius: 33px;
       z-index: -1;
     }

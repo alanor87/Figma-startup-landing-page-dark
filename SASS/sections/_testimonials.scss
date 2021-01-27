@@ -36,6 +36,7 @@
 }
 .testimonials-text {
   @extend %font-paragraphe;
+  color: var(--text-secondary);
   width: 80%;
   margin-top: 30px;
 }

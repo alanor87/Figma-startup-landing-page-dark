@@ -44,7 +44,7 @@
 }
 .features-icon {
   margin-top: 5px;
-  fill: $accent-color;
+  fill: var(--accent-color);
   &.spoons {
     width: 26px;
     height: 24px;
@@ -64,6 +64,7 @@
   padding: 0 10px 10px 10px;
 }
 .features-item-paragraphe {
-  @extend %font-paragraphe;
+  @extend %font-paragraphe;  
+  color: var(--text-secondary);
   padding: 10px;
 }

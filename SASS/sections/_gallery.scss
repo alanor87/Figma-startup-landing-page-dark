@@ -1,10 +1,10 @@
 .section-gallery .section-subtitle {
-    width: 57%;
-    padding: 10px;
-    margin-bottom: 54px;
-    @media screen and(min-width: $breakpoint-desktop) {
-      width: 54%;
-    }
+  width: 57%;
+  padding: 10px;
+  margin-bottom: 54px;
+  @media screen and(min-width: $breakpoint-desktop) {
+    width: 54%;
+  }
 }
 .gallery-images-wrapper {
   display: flex;
@@ -59,7 +59,7 @@
 }
 .gallery-button {
   @extend %button;
-  border: 1px solid $bg-light;
+  border: 1px solid var(--bg-secondary);
   background-color: transparent;
   margin-top: 11px;
   @media screen and (min-width: $breakpoint-desktop) {

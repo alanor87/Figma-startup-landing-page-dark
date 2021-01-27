@@ -29,6 +29,12 @@
           </ul>
         </nav>
         <button type="button" class="login-btn">Login</button>
+        <label class="outer-frame js-theme-switch" >
+          <input type="checkbox" class="nightMode-checkbox is-hidden" />
+          <div class="inner-frame">
+            <div class="toggle-button"></div>
+          </div>
+        </label>
         <button
           type="button"
           class="menu-btn"
@@ -649,9 +655,9 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" modal>
+    <div class="backdrop hidden" modal>
       <div class="container">
-        <a class="logo-modal" href="#">
+        <a class="logo-modal" href="index.html">
           <img
             loading="lazy"
             src="./img/logo-dark@1x.png"
@@ -666,12 +672,12 @@
           </svg>
         </button>
         <nav class="nav-modal">
-           <button type="button" class="modal-login-btn">Login</button>
-          <ul class="modal-nav-list">
-            <li><a href="#" class="nav-link" close-modal>Home</a></li>
-            <li><a href="#product" class="nav-link" close-modal>Product</a></li>
-            <li><a href="#" class="nav-link" close-modal>About</a></li>
-            <li><a href="#contact" class="nav-link" close-modal>Contact</a></li>
+          <button type="button" class="modal-login-btn">Login</button>
+          <ul class="modal-nav-list" close-modal-link>
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#product" class="nav-link">Product</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
           </ul>
         </nav>
       </div>

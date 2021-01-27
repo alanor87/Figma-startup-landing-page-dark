@@ -36,11 +36,12 @@ img {
   display: block;
 }
 body {
-  background-color: $bg-dark;
+  background-color: var(--bg-main);
   padding-top: 164px;
   @media screen and (min-width: $breakpoint-desktop) {
     padding-top: 118px;
   }
+  transition: background-color 250ms linear;
 }
 ul {
   list-style: none;
@@ -49,7 +50,7 @@ section {
   padding: 100px 0;
   margin-bottom: 50px;
   text-align: center;
-  box-shadow: 0 24px 13px -9px $accent-color;
+  box-shadow: 0 24px 13px -9px var(--accent-color);
   background-image: linear-gradient(
     180deg,
     rgba(30, 30, 30, 0) 80%,
@@ -62,16 +63,16 @@ a {
 }
 a:hover,
 a:focus {
-  color: $accent-color;
+  color: var(--accent-color);
 }
 
-svg {
-  fill: #ffffff;
+svg {  
+  fill: var(--text-secondary);
   transition: fill 250ms linear;
 
   &:hover,
   &:focus {
-    fill: $accent-color;
+    fill: var(--accent-color);
   }
 }
 

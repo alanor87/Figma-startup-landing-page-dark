@@ -1,9 +1,18 @@
 .is-hidden {
-  visibility: hidden;
-  pointer-events: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
 }
-
-.container-shift {  
+.container-shift {
   opacity: 0;
   transform: translateX(-100px);
+}
+.light-theme {
+  --bg-main: #e7e7e7;
+  --bg-secondary: #181818;
+  --text-main:#e7e7e7;
+  --text-secondary: #000000;
+  --bg-third: #d3d3d3;
 }
