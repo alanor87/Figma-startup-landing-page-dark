@@ -60,9 +60,13 @@ function themeToggle() {
     heroRef.style.backgroundImage = newImage;
 }
 themeToggleRef.addEventListener('change', themeToggle);
+
 //#################################### Images Intersection observer ##############################//
 
+
+// const imagesTarget = Array.from(document.getElementsByTagName('img'));
 // const onImageEntry = function (entries) {
+//     console.log(entries);
 //     for (entry of entries) {
 //         if (entry.isIntersecting) {
 //             entry.target.src = entry.target.dataset.src;
@@ -75,7 +79,6 @@ themeToggleRef.addEventListener('change', themeToggle);
 //     rootMargin: '0px 0px 20px 0px',
 //     threshold: 0.01,
 // }
-// const imagesTarget = Array.from(document.getElementsByTagName('img'));
 // const imageObserver = new IntersectionObserver(onImageEntry, imagesOptions);
 // imagesTarget.forEach(image => imageObserver.observe(image));
 

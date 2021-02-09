@@ -1,0 +1,21 @@
+{
+  "name": "figma",
+  "version": "1.0.0",
+  "description": "https://alanor87.github.io/Figma-startup-landing-page-dark/",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node sass -o dist/css dev/sass/main.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanor87/Figma-startup-landing-page-dark.git"
+  },
+  "author": "alanor <jonny.freeman@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanor87/Figma-startup-landing-page-dark/issues"
+  },
+  "homepage": "https://github.com/alanor87/Figma-startup-landing-page-dark#readme",
+  "devDependencies": {}
+}
