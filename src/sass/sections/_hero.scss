@@ -1,0 +1,67 @@
+.section-hero {
+  padding-bottom: 480px;
+  // background-image: url('../img/hero/hero-screens-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 837px;
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    // background-image: 
+      // url('../img/hero/hero-screens-mobile@2x.jpg');
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    background-size: 1579px;
+    padding-bottom: 890px;
+    // background-image:
+      // url('../img/hero/hero-screens-desktop@1x.jpg');
+  }
+  @media screen and (min-width: $breakpoint-desktop) and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    // background-image:
+      // url('../img/hero/hero-screens-desktop@2x.jpg');
+  }
+
+  & .section-title {
+    font-weight: 400;
+    max-width: 70%;
+    @media screen and (min-width: $breakpoint-desktop) {
+      font-size: 80px;
+      max-width: 65%;
+      font-size: 80px;
+    }
+  }
+
+  & .section-subtitle {
+    padding: 0 80px;
+    margin-bottom: 67px;
+    @media screen and (min-width: $breakpoint-desktop) {
+      max-width: 60%;
+      padding: 0;
+      margin-bottom: 95px;
+      white-space: normal;
+    }
+  }
+}
+
+.hero-btns {
+  display: inline-block;
+  margin: 0 auto;
+  @media screen and (min-width: $breakpoint-desktop) {
+    display: inline-flex;
+  }
+}
+.try-button {
+  @extend %button;
+  margin-bottom: 21px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-bottom: 0;
+    margin-right: 35px;
+  }
+}
+.learn-button {
+  @extend %button;
+  background-color: transparent;
+  border: 1px solid var(--bg-secondary);
+}

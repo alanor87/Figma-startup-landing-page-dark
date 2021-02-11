@@ -1,0 +1,66 @@
+%font-second-headline {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.19;
+  letter-spacing: 0.2px;
+  color: var(--text-secondary);
+}
+%font-title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: var(--text-secondary);
+}
+
+%font-sub-heading {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  color: var(--text-secondary);
+}
+
+%font-button {
+  font-family: Roboto, sans-serif;
+  font-size: 17px;
+  line-height: 1.47;
+  letter-spacing: 0.2px;
+  color: var(--text-main);
+}
+%font-subtitle {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  color: var(--text-third);
+}
+%font-paragraphe {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  color: var(--text-main);
+}
+%font-link {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+%font-mobile-menu {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  color: var(--text-main);
+}

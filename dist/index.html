@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Figma landing page" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Startup landing page</title>
+  </head>
+  <body>
+    <header class="section-header">
+      <div class="container">
+        <a href="#">
+          <img
+            
+            src="./img/logo-dark@1x.png"
+            srcset="./img/logo-dark@2x.png 2x"
+            alt="Logo"
+            class="logo"
+          />
+        </a>
+        <nav class="nav-header">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#product" class="nav-link">Product</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        <button type="button" class="login-btn">Login</button>
+        <label class="outer-frame js-theme-switch" for="nightToggle">
+          <input
+            type="checkbox"
+            class="nightMode-checkbox is-hidden"
+            id="nightToggle"
+          />
+          <div class="inner-frame">
+            <div class="toggle-button"></div>
+          </div>
+        </label>
+        <button
+          type="button"
+          class="menu-btn"
+          open-modal
+          aria-label="Open mobile menu"
+        >
+          <svg class="menu-icon">
+            <use href="./img/sprite.svg#icon-menu-burger"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="container">
+          <h1 class="section-title">Work at the speed of thought.</h1>
+          <p class="section-subtitle">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers who want a simple way to plan their schedule.
+          </p>
+          <div class="hero-btns">
+            <button type="button" class="try-button">Try For Free</button>
+            <button type="button" class="learn-button">Learn More</button>
+          </div>
+        </div>
+      </section>
+      <section class="section-features" id="product">
+        <div class="container container-shift">
+          <h2 class="section-title">FEATURES</h2>
+          <p class="section-subtitle">
+            Most calendars are designed for teams. Slate is designed for
+            freelancers who want a simple way to plan their schedule.
+          </p>
+          <div class="features-wrapper">
+            <picture>
+              <source
+                srcset="
+                  ./img/features/features-chatbot-desktop@1x.jpg 1x,
+                  ./img/features/features-chatbot-desktop@2x.jpg 2x
+                "
+                media="(min-width: 1230px)"
+              />
+              <source
+                srcset="
+                  ./img/features/features-chatbot-mobile@1x.jpg 1x,
+                  ./img/features/features-chatbot-mobile@2x.jpg 2x
+                "
+              />
+              <img
+                
+                class="features-chatbot"
+                src=""
+                data-src="./img/features/features-chatbot-mobile@1x.jpg"
+                alt="Chatbot"
+              />
+            </picture>
+            <ul class="features-list">
+              <li class="features-item">
+                <div class="features-item-header">
+                  <svg class="features-icon spoons">
+                    <use href="./img/sprite.svg#features-icon-spoons"></use>
+                  </svg>
+                  <p class="features-item-title">A single source of truth</p>
+                </div>
+                <p class="features-item-paragraphe">
+                  When you add work to your Slate calendar we automatically
+                  calculate useful insights
+                </p>
+              </li>
+              <li class="features-item">
+                <div class="features-item-header">
+                  <svg class="features-icon alien">
+                    <use href="./img/sprite.svg#features-icon-alien"></use>
+                  </svg>
+                  <p class="features-item-title">Intuitive interface</p>
+                </div>
+                <p class="features-item-paragraphe">
+                  When you add work to your Slate calendar we automatically
+                  calculate useful insights
+                </p>
+              </li>
+              <li class="features-item">
+                <div class="features-item-header">
+                  <svg class="features-icon infinity">
+                    <use href="./img/sprite.svg#features-icon-infinity"></use>
+                  </svg>
+                  <p class="features-item-title">Or with rules</p>
+                </div>
+                <p class="features-item-paragraphe">
+                  When you add work to your Slate calendar we automatically
+                  calculate useful insights
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section-contents">
+        <div class="container container-shift">
+          <h2 class="section-title">Contents</h2>
+          <p class="section-subtitle">
+            We focus on ergonomics and meeting you where you work. It's only a
+            keystroke away.
+          </p>
+          <div class="content-cards-wrapper">
+            <div class="contents-card">
+              <p class="contents-title">Work</p>
+              <p class="contents-text">
+                Ever wondered if you're too reliant on a client for work? Slate
+                helps you identify .
+              </p>
+              <button class="contents-button-signup">Sign Up</button>
+              <picture>
+                <source
+                  srcset="
+                    ./img/contents/contents-macbook-desktop@1x.jpg 1x,
+                    ./img/contents/contents-macbook-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1230px)"
+                />
+                <source
+                  srcset="
+                    ./img/contents/contents-macbook-mobile@1x.jpg 1x,
+                    ./img/contents/contents-macbook-mobile@2x.jpg 2x
+                  "
+                />
+                <img
+                  
+                  src="./img/contents/contents-macbook-mobile@1x.jpg"
+                  class="contents-card-img"
+                  alt="macbook"
+                />
+              </picture>
+            </div>
+            <div class="contents-card">
+              <p class="contents-title">Design with real data</p>
+              <p class="contents-text">
+                Ever wondered if you're too reliant on a client for work? Slate
+                helps you identify .
+              </p>
+              <button class="contents-button-try">Try For Free</button>
+              <picture>
+                <source
+                  srcset="
+                    ./img/contents/contents-boards-desktop@1x.jpg 1x,
+                    ./img/contents/contents-boards-desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1230px)"
+                />
+                <source
+                  srcset="
+                    ./img/contents/contents-boards-mobile@1x.jpg 1x,
+                    ./img/contents/contents-boards-mobile@2x.jpg 2x
+                  "
+                />
+                <img
+                  
+                  src="./img/contents/contents-boards-mobile@1x.jpg"
+                  class="contents-card-img"
+                  alt="boards"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-gallery">
+        <div class="container container-shift">
+          <h2 class="section-title">Gallery</h2>
+          <p class="section-subtitle">
+            We focus on ergonomics and meeting you where you work. It's only a
+            keystroke away.
+          </p>
+          <div class="gallery-images-wrapper">
+            <picture>
+              <source
+                srcset="
+                  ./img/gallery/gallery-drone-desktop@1x.jpg 1x,
+                  ./img/gallery/gallery-drone-desktop@2x.jpg 2x
+                "
+                media="(min-width: 1230px)"
+              />
+              <source
+                srcset="
+                  ./img/gallery/gallery-drone-mobile@1x.jpg 1x,
+                  ./img/gallery/gallery-drone-mobile@2x.jpg 2x
+                "
+              />
+              <img
+                
+                class="gallery-image"
+                src="./img/gallery/gallery-drone-desktop@1x.jpg"
+                alt="picture"
+              />
+            </picture>
+            <picture class="earphones">
+              <source
+                srcset="
+                  ./img/gallery/gallery-earphones-mobile@1x.jpg 1x,
+                  ./img/gallery/gallery-earphones-mobile@2x.jpg 2x
+                "
+              />
+              <img
+                
+                class="gallery-image"
+                src="./img/gallery/gallery-earphones-mobile@1x.jpg"
+                alt="picture"
+              />
+            </picture>
+            <picture class="hands">
+              <source
+                srcset="
+                  ./img/gallery/gallery-hands-mobile@1x.jpg 1x,
+                  ./img/gallery/gallery-hands-mobile@2x.jpg 2x
+                "
+              />
+              <img
+                
+                class="gallery-image"
+                src="./img/gallery/gallery-hands-mobile@1x.jpg"
+                alt="picture"
+              />
+            </picture>
+            <picture class="laptop">
+              <source
+                srcset="
+                  ./img/gallery/gallery-laptop-mobile@1x.jpg 1x,
+                  ./img/gallery/gallery-laptop-mobile@2x.jpg 2x
+                "
+              />
+              <img
+                
+                class="gallery-image"
+                src="./img/gallery/gallery-laptop-mobile@1x.jpg"
+                alt="picture"
+              />
+            </picture>
+            <picture class="ipad">
+              <source
+                srcset="
+                  ./img/gallery/gallery-ipad-desktop@1x.jpg 1x,
+                  ./img/gallery/gallery-ipad-desktop@2x.jpg 2x
+                "
+              />
+              <img
+                
+                class="gallery-image"
+                src="./img/gallery/gallery-ipad-desktop@1x.jpg"
+                alt="picture"
+              />
+            </picture>
+            <picture class="talk">
+              <source
+                srcset="
+                  ./img/gallery/gallery-talk-desktop@1x.jpg 1x,
+                  ./img/gallery/gallery-talk-desktop@2x.jpg 2x
+                "
+              />
+              <img
+                
+                class="gallery-image"
+                src="./img/gallery/gallery-talk-desktop@1x.jpg"
+                alt="picture"
+              />
+            </picture>
+            <picture class="domore">
+              <source
+                srcset="
+                  ./img/gallery/gallery-domore-desktop@1x.jpg 1x,
+                  ./img/gallery/gallery-domore-desktop@2x.jpg 2x
+                "
+              />
+              <img
+                
+                class="gallery-image"
+                src="./img/gallery/gallery-domore-desktop@1x.jpg"
+                alt="picture"
+              />
+            </picture>
+            <picture class="code">
+              <source
+                srcset="
+                  ./img/gallery/gallery-code-desktop@1x.jpg 1x,
+                  ./img/gallery/gallery-code-desktop@2x.jpg 2x
+                "
+              />
+              <img
+                
+                class="gallery-image"
+                src="./img/gallery/gallery-code-desktop@1x.jpg"
+                alt="picture"
+              />
+            </picture>
+            <picture class="bluekey">
+              <source
+                srcset="
+                  ./img/gallery/gallery-bluekey-desktop@1x.jpg 1x,
+                  ./img/gallery/gallery-bluekey-desktop@2x.jpg 2x
+                "
+              />
+              <img
+                
+                class="gallery-image"
+                src="./img/gallery/gallery-bluekey-desktop@1x.jpg"
+                alt="picture"
+              />
+            </picture>
+            <picture class="camera">
+              <source
+                srcset="
+                  ./img/gallery/gallery-camera-desktop@1x.jpg 1x,
+                  ./img/gallery/gallery-camera-desktop@2x.jpg 2x
+                "
+              />
+              <img
+                
+                class="gallery-image"
+                src="./img/gallery/gallery-camera-desktop@1x.jpg"
+                alt="picture"
+              />
+            </picture>
+          </div>
+          <button class="gallery-button" type="button">See more</button>
+        </div>
+      </section>
+      <section class="section-partners">
+        <div class="container container-shift">
+          <h2 class="section-title">Partners</h2>
+          <p class="section-subtitle">
+            We focus on ergonomics and meeting you where you work. It's only a
+            keystroke away.
+          </p>
+          <div class="partners-icons-wrapper">
+            <a
+              href="http://www.appstore.com"
+              class="partners-link"
+              aria-label="AppStore"
+              title="AppStore"
+            >
+              <svg class="partners-icon">
+                <use
+                  href="./img/partners/partners-sprite.svg#icon-appstore"
+                ></use>
+              </svg>
+            </a>
+            <a
+              href="http://www.airpay.com"
+              class="partners-link"
+              aria-label="AirPay"
+              title="AirPay"
+            >
+              <img
+                
+                src="./img/partners/partners-airpay.svg"
+                class="partners-icon"
+                alt="Airpay"
+              />
+            </a>
+            <a
+              href="http://www.android.com"
+              class="partners-link"
+              aria-label="Android"
+              title="Android"
+            >
+              <svg class="partners-icon">
+                <use
+                  href="./img/partners/partners-sprite.svg#icon-android"
+                ></use>
+              </svg>
+            </a>
+            <a
+              href="http://www.basecamp.com"
+              class="partners-link"
+              aria-label="Basecamp"
+              title="Basecamp"
+            >
+              <svg class="partners-icon">
+                <use
+                  href="./img/partners/partners-sprite.svg#icon-basecamp"
+                ></use>
+              </svg>
+            </a>
+            <a
+              href="http://www.airbnb.com"
+              class="partners-link"
+              aria-label="AirBnB"
+              title="AirBnB"
+            >
+              <svg class="partners-icon">
+                <use
+                  href="./img/partners/partners-sprite.svg#icon-airbnb"
+                ></use>
+              </svg>
+            </a>
+            <a
+              href="http://www.ibm.com"
+              class="partners-link"
+              aria-label="IBM"
+              title="IBM"
+            >
+              <svg class="partners-icon ibm">
+                <use href="./img/partners/partners-sprite.svg#icon-ibm"></use>
+              </svg>
+            </a>
+          </div>
+          <button class="partners-btn" type="button">All Partners</button>
+        </div>
+      </section>
+      <section class="section-testimonials">
+        <div class="container container-shift">
+          <h2 class="section-title">Testimonials</h2>
+          <div class="testimonials-cards-wrapper">
+            <div class="testimonials-card">
+              <picture>
+                <source
+                  srcset="
+                    ./img/testimonials/testimonials-1@1x.jpg 1x,
+                    ./img/testimonials/testimonials-1@2x.jpg 2x
+                  "
+                />
+                <img
+                  
+                  class="testimonials-image"
+                  src="./img/testimonials/testimonials-1@1x.jpg"
+                  alt="picture"
+                />
+              </picture>
+              <p class="testimonials-title">Wade Steward Designer</p>
+              <p class="testimonials-text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year. Slate helps you see
+                how many more days you need to work to reach your financial goal
+                for the month and year.your financial goal for the month and
+                year.
+              </p>
+            </div>
+            <div class="testimonials-card">
+              <picture>
+                <source
+                  srcset="
+                    ./img/testimonials/testimonials-2@1x.jpg 1x,
+                    ./img/testimonials/testimonials-2@2x.jpg 2x
+                  "
+                />
+                <img
+                  
+                  class="testimonials-image"
+                  src="./img/testimonials/testimonials-2@1x.jpg"
+                  alt="picture"
+                />
+              </picture>
+              <p class="testimonials-title">Philip Watson Designer</p>
+              <p class="testimonials-text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year. Slate helps you see
+                how many more days you need to work to reach your financial goal
+                for the month and year.your financial goal for the month and
+                year.
+              </p>
+            </div>
+            <div class="testimonials-card">
+              <picture>
+                <source
+                  srcset="
+                    ./img/testimonials/testimonials-3@1x.jpg 1x,
+                    ./img/testimonials/testimonials-3@2x.jpg 2x
+                  " />
+                <img
+                  
+                  class="testimonials-image"
+                  src="./img/testimonials/testimonials-3@1x.jpg"
+                  alt="picture"
+              /></picture>
+              <p class="testimonials-title">Arthur Wilson Designer</p>
+              <p class="testimonials-text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year. Slate helps you see
+                how many more days you need to work to reach your financial goal
+                for the month and year.your financial goal for the month and
+                year.
+              </p>
+            </div>
+            <div class="testimonials-card">
+              <picture>
+                <source
+                  srcset="
+                    ./img/testimonials/testimonials-4@1x.jpg 1x,
+                    ./img/testimonials/testimonials-4@2x.jpg 2x
+                  " />
+                <img
+                  
+                  class="testimonials-image"
+                  src="./img/testimonials/testimonials-4@1x.jpg"
+                  alt="picture"
+              /></picture>
+              <p class="testimonials-title">Regina Black Designer</p>
+              <p class="testimonials-text">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year. Slate helps you see
+                how many more days you need to work to reach your financial goal
+                for the month and year.your financial goal for the month and
+                year.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-open-type">
+        <div class="container container-shift">
+          <h2 class="section-title">OpenType features and Variable fonts</h2>
+          <button class="open-type-button-try">Try For Free</button>
+          <picture>
+            <source
+              srcset="
+                ./img/open-type/open-chart-desktop@1x.jpg 1x,
+                ./img/open-type/open-chart-desktop@2x.jpg 2x
+              "
+              media="(min-width: 1230px)"
+            />
+            <source
+              srcset="
+                ./img/open-type/open-chart-mobile@1x.jpg 1x,
+                ./img/open-type/open-chart-mobile@2x.jpg 2x
+              "
+            />
+            <img
+              
+              src="./img/open-type/open-chart-mobile@1x.jpg"
+              class="open-type-img"
+              alt="open-type"
+            />
+          </picture>
+        </div>
+      </section>
+    </main>
+    <footer class="section-footer" id="contact">
+      <div class="container container-shift">
+        <div class="footer-wrap">
+          <ul class="footer-nav">
+            <li>
+              <p class="footer-nav-title">Fingertipe</p>
+              <ul class="footer-nav-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Examples</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Updates</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="footer-nav-title">Resources</p>
+              <ul class="footer-nav-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Examples</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Updates</a></li>
+              </ul>
+            </li>
+            <li>
+              <p class="footer-nav-title">About</p>
+              <ul class="footer-nav-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Examples</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Updates</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="contacts">
+            <li>
+              <a
+                class="contacts-link"
+                href="https://goo.gl/maps/GQKhCAzYcuWmtKSq5"
+                ><svg width="46px" height="46px">
+                  <use href="./img/sprite.svg#icon-footer-location"></use>
+                </svg>
+                Mockingbird Hill undefined</a
+              >
+            </li>
+            <li>
+              <a class="contacts-link" href="tel:(239) 555-0108"
+                ><svg width="35px" height="35px">
+                  <use href="./img/sprite.svg#icon-footer-phone"></use>
+                </svg>
+                (239) 555-0108</a
+              >
+            </li>
+          </ul>
+          <ul class="social-networks">
+            <li>
+              <a
+                href="http://www.twitter.com"
+                title="Twitter"
+                aria-label="Twitter"
+                ><svg width="40px" height="40px">
+                  <use href="./img/sprite.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                href="http://www.facebook.com"
+                title="Facebook"
+                aria-label="Facebook"
+                ><svg width="40px" height="40px">
+                  <use href="./img/sprite.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                href="http://www.linkedin.com"
+                title="LinkedIn"
+                aria-label="LinkedIn"
+                ><svg width="40px" height="40px">
+                  <use href="./img/sprite.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop hidden" modal>
+      <div class="container">
+        <a class="logo-modal" href="index.html">
+          <img
+            
+            src="./img/logo-dark@1x.png"
+            srcset="./img/logo-dark@2x.png 2x"
+            alt="Logo"
+            class="logo"
+          />
+        </a>
+        <button type="button" class="menu-close-btn" close-modal>
+          <svg class="menu-close-icon">
+            <use href="./img/sprite.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <nav class="nav-modal">
+          <button type="button" class="modal-login-btn">Login</button>
+          <ul class="modal-nav-list" close-modal-link>
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#product" class="nav-link">Product</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </body>
+  <script src="./js/main.js"></script>
+</html>

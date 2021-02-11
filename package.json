@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node sass -o dist/css dev/sass/main.scss"
+    "dev": "webpack --mode development",
+    "prod": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -17,5 +18,18 @@
     "url": "https://github.com/alanor87/Figma-startup-landing-page-dark/issues"
   },
   "homepage": "https://github.com/alanor87/Figma-startup-landing-page-dark#readme",
-  "devDependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.2",
+    "css-minimizer-webpack-plugin": "^1.2.0",
+    "mini-css-extract-plugin": "^1.3.6",
+    "node-sass": "^5.0.0",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  }
 }
