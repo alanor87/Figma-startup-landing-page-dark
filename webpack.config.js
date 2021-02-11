@@ -8,7 +8,7 @@ module.exports = {
         path: path.resolve(__dirname, "./dist/js"),
         filename: "main.js",
     },
-    plugins: [new MiniCssExtractPlugin({filename: '../css/main.css'})],
+    plugins: [new MiniCssExtractPlugin({ filename: '../css/main.css' })],
     module: {
         rules: [
             {
@@ -26,8 +26,9 @@ module.exports = {
                 test: /\.scss$/,
                 use: [{
                     loader: MiniCssExtractPlugin.loader
-                },  {
-                    loader: 'css-loader'
+                }, {
+                    loader: 'css-loader',
+                    options: { url: false }
                 }, {
                     loader: 'sass-loader'
                 }]

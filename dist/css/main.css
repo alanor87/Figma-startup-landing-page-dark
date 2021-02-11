@@ -300,13 +300,21 @@ svg {
 
 .section-hero {
   padding-bottom: 480px;
+  background-image: url("../img/hero/hero-screens-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: 837px; }
+  @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: url("../img/hero/hero-screens-mobile@2x.jpg"); } }
   @media screen and (min-width: 1230px) {
     .section-hero {
       background-size: 1579px;
-      padding-bottom: 890px; } }
+      padding-bottom: 890px;
+      background-image: url("../img/hero/hero-screens-desktop@1x.jpg"); } }
+  @media screen and (min-width: 1230px) and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+    .section-hero {
+      background-image: url("../img/hero/hero-screens-desktop@2x.jpg"); } }
   .section-hero .section-title {
     font-weight: 400;
     max-width: 70%; }
